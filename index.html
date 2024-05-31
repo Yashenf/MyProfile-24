@@ -38,6 +38,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- aos library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!----------------------------------------- Header -------------------------------------------------------------------->
@@ -121,9 +123,9 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <div id="img-container-aboutMe"></div>
+              <div id="img-container-aboutMe" data-aos="fade-right"></div>
             </div>
-            <div class="col-md-8" id="aboutMe-txt">
+            <div class="col-md-8" id="aboutMe-txt" data-aos="fade-left">
               <p>
                 Welcome to my corner of the web! I'm a Gen Z man born in 2002,
                 passionate about mindfulness, minimalism, and the art of staying
@@ -152,7 +154,7 @@
         <h3 id="edu_heading_txt">My Educational Background</h3>
         <div class="timeline">
           <div class="container-timeline left">
-            <div class="content">
+            <div class="content" data-aos="fade-down-right">
               <h4>Bachelor of ICT (Hons).</h4>
               <p>2023-2027</p>
               <p>Department of ICT</p>
@@ -161,7 +163,7 @@
             </div>
           </div>
           <div class="container-timeline right">
-            <div class="content">
+            <div class="content" data-aos="fade-down-left">
               <h4>GDSE | Graduate Diploma in Software Engineering</h4>
               <p>2022-2023(December)</p>
               <p>
@@ -171,7 +173,7 @@
           </div>
 
           <div class="container-timeline left">
-            <div class="content">
+            <div class="content" data-aos="fade-right">
               <h4>GCE Advanced Level</h4>
               <p>2009-2021</p>
               <h6>Ananda Sastralaya - Mathugama.</h6>
@@ -187,7 +189,7 @@
           <div class="row">
             <div class="col-md-3">
 
-              <div class="what-i-do-card-outer">
+              <div class="what-i-do-card-outer" data-aos="flip-left">
                 <div class="what-i-do-card-inner">
                   <div class="what-i-do-card-top">
                     <p class="what-i-do-card-heading">Frontend Development</p>
@@ -236,7 +238,7 @@
 
             <div class="col-md-3">
 
-              <div class="what-i-do-card-outer">
+              <div class="what-i-do-card-outer" data-aos="flip-right">
                 <div class="what-i-do-card-inner">
                   <div class="what-i-do-card-top">
                     <p class="what-i-do-card-heading">Backend Development</p>
@@ -286,7 +288,7 @@
 
             <div class="col-md-3">
 
-              <div class="what-i-do-card-outer">
+              <div class="what-i-do-card-outer" data-aos="flip-left">
                 <div class="what-i-do-card-inner">
                   <div class="what-i-do-card-top">
                     <p class="what-i-do-card-heading">Mobile App  Development</p>
@@ -336,7 +338,7 @@
 
             <div class="col-md-3">
 
-              <div class="what-i-do-card-outer">
+              <div class="what-i-do-card-outer" data-aos="flip-right">
                 <div class="what-i-do-card-inner">
                   <div class="what-i-do-card-top">
                     <p class="what-i-do-card-heading">Others</p>
@@ -386,6 +388,39 @@
           </div>
         </div>
       </section>
+      <section id="contact-me">
+        <h2 id="contact-me-heading">Say Hello</h2>
+        <div class="contact-section-outer">
+            <div class="col-md-6 contact-me-outer">
+            <div class="message-media-icons-container">
+              <div class="message-icon" id="whatsapp" data-aos="zoom-in-up">
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+              <div class="message-icon" id="telegram" data-aos="zoom-in-up">
+                <a href=""><i class="fa-brands fa-telegram"></i></i></a>
+              </div>
+              <div class="message-icon" id="messanger" data-aos="zoom-in-up">
+                <a href=""><i class="fa-brands fa-facebook-messenger"></i></a>
+              </div>
+              <div class="message-icon" id="slack" data-aos="zoom-in-up">
+                <a href=""><i class="fa-brands fa-slack"></i></a>
+              </div>
+            </div>
+            <div class="middle-contct-details-container">
+              <div class="tel tel1" data-aos="zoom-in-up">
+                <a href="">+94 711 974 973</a>
+              </div>
+              <div class="tel tel1" data-aos="zoom-in-up">
+                <a href="">+94 711 974 973</a>
+              </div>
+            </div>
+            <div class="email-contact-container" data-aos="zoom-in-up">
+              <a href="">yashensavindu@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="" style="height: 100px;"></div>
     </main>
 
     <!-- jQuery -->
@@ -399,5 +434,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
