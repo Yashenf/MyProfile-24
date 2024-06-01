@@ -21,3 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Other custom code that relies on Typed.js can go here
 });
 
+let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+        document.querySelector("header").style.transform = "translateY(0)";
+    } else {
+        document.querySelector("header").style.transform = "translateY(-100%)";
+    }
+    prevScrollPos = currentScrollPos;
+};

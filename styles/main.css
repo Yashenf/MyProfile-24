@@ -113,10 +113,15 @@ main{
 .social-icon{
     width: 25%;
 }
-.social-icon > i{
-    font-size: 28px;
+.social-icon >a{
+    width: 100%;
+    text-decoration: none;
 }
-.social-icon > i:hover{
+.social-icon >a> i{
+    font-size: 28px;
+    color: black;
+}
+.social-icon >a> i:hover{
     cursor: pointer;
     color: purple;
 }
