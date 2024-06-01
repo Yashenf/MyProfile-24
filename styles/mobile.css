@@ -75,4 +75,7 @@
     .right {
     left: 0%;
     }
+    .middle-contct-details-container, .email-contact-container{
+      margin: 0 7px;
+    }
   }
